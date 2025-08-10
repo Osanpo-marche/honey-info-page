@@ -35,3 +35,12 @@ address {
   text-align: center; /* 中央揃え */
   line-height: 1.6; /* 行間を広げて読みやすく */
 }
+
+iframe {
+  width: 100%;
+  height: 315px;
+  max-width: 560px;
+  display: block;
+  margin: 20px auto;
+  border-radius: 8px; /* 角丸にして柔らかい雰囲気 */
+}
