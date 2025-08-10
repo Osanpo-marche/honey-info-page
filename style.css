@@ -44,14 +44,26 @@ iframe {
   margin: 20px auto;
   border-radius: 8px; /* 角丸にして柔らかい雰囲気 */
 }
+
 .photo-gallery {
     display: flex;
-    gap: 10px;
-    margin-top: 15px;
+    flex-wrap: wrap; /* 幅が足りない場合は折り返し */
+    gap: 15px;       /* 写真の間隔 */
+    justify-content: center; /* 横方向中央寄せ */
+    margin: 20px 0;
 }
 
 .bee-photo {
-    max-width: 48%;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    max-width: 30%;  /* PC時は3枚並べ */
+    height: auto;
+    border-radius: 8px; /* 角丸で柔らかい印象 */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
+
+/* スマホ表示用（幅768px以下） */
+@media (max-width: 768px) {
+    .bee-photo {
+        max-width: 100%; /* スマホ時は縦並び */
+    }
+}
+
