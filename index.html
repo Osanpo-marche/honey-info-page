@@ -1,120 +1,126 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>百花乃恵 桜 - 日本蜜蜂の蜂蜜製法</title>
-  <style>
-    body {
-      font-family: "Hiragino Sans", "Noto Sans JP", sans-serif;
-      line-height: 1.8;
-      margin: 0;
-      padding: 20px;
-      background: #fffaf0;
-      color: #333;
-    }
-    h1, h2, h3 {
-      color: #8b4513;
-    }
-    h1 {
-      font-size: 1.8rem;
-      margin-top: 0;
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>百花乃恵 桜</title>
+<style>
+  body {
+    font-family: "Hiragino Mincho ProN", serif;
+    background-color: #fffdf8;
+    color: #3a2f2f;
+    line-height: 1.8;
+    margin: 0;
+    padding: 0;
+  }
+  header {
+    background-color: #f8e8a6;
+    padding: 2rem 1rem;
+    text-align: center;
+    border-bottom: 2px solid #e6d58c;
+  }
+  header h1 {
+    font-size: 1.8rem;
+    margin: 0;
+  }
+  main {
+    max-width: 800px;
+    margin: auto;
+    padding: 2rem 1rem;
+  }
+  h2 {
+    border-bottom: 2px solid #e6d58c;
+    padding-bottom: 0.5rem;
+    margin-top: 2rem;
+    font-size: 1.4rem;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0;
+    font-size: 0.9rem;
+  }
+  th, td {
+    border: 1px solid #e6d58c;
+    padding: 0.75rem;
+    text-align: center;
+  }
+  th {
+    background-color: #fdf6d1;
+  }
+  /* 表の横スクロール対応 */
+  .table-wrapper {
+    overflow-x: auto;
+  }
+  footer {
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.8rem;
+    background-color: #f8e8a6;
+    margin-top: 3rem;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 1rem auto;
+  }
+  /* スマホ用の文字サイズ微調整 */
+  @media (max-width: 600px) {
+    header h1 {
+      font-size: 1.5rem;
     }
     h2 {
-      border-bottom: 2px solid #deb887;
-      padding-bottom: 4px;
-      margin-top: 2em;
+      font-size: 1.2rem;
     }
-    p {
-      margin: 1em 0;
+    body {
+      font-size: 0.95rem;
     }
-    table {
-      border-collapse: collapse;
-      width: 100%;
-      margin: 1em 0;
-      background: #fff;
-    }
-    th, td {
-      border: 1px solid #ccc;
-      padding: 8px;
-      text-align: left;
-    }
-    th {
-      background: #f5deb3;
-    }
-    footer {
-      font-size: 0.9rem;
-      margin-top: 3em;
-      color: #555;
-    }
-  </style>
+  }
+</style>
 </head>
 <body>
 
-  <h1>ここでしか採れない、ここでしか味わえない。<br>「桜区テロワール」</h1>
+<header>
+  <h1>百花乃恵 桜</h1>
+  <p>ここでしか採れない、ここでしか味わえない「桜区テロワール」</p>
+</header>
 
-  <p>ご当地から生まれた自然のしずくであること。</p>
-  <p>日本蜜蜂と桜区の恵みから生まれる一滴の記憶…</p>
+<main>
+  <section>
+    <h2>ご当地から生まれた自然のしずく</h2>
+    <p>日本蜜蜂と桜区の恵みから生まれる一滴の記憶...</p>
+  </section>
 
-  <h2>「百花乃恵 桜」（サ・ク・ラ）</h2>
-  <p>日本蜜蜂は、その土地の様々な花から蜜を集める「百花蜜」を生み出すことで知られ、「天然の良薬」とも称されるほど滋養分も豊富です。</p>
+  <section>
+    <h2>なぜ日本ミツバチの蜂蜜は貴重なのか？</h2>
+    <p>日本でのハチミツ消費の約93%が輸入品...（本文続く）</p>
+  </section>
 
-  <h2>なぜ日本ミツバチの蜂蜜は“貴重”なのか？</h2>
-  <p>日本でのハチミツ消費は約93%が輸入品（その内、約80%が中国産）です。さらに国内で生産される約7%のハチミツは、ほぼ「西洋ミツバチ」が集めたもの。日本蜜蜂と西洋ミツバチの集める蜜の違いを知っている人は少ないでしょう。</p>
-  <p>日本在来種である「日本蜜蜂」のはちみつシェアは、市場全体の1%にも満たない極めて希少な存在です。世界三大「偽装食品」の一つとも言われる蜂蜜ですが、本物の日本蜜蜂のハチミツを口にしたことがある人はごくわずかです。</p>
+  <section>
+    <h2>日本ミツバチと西洋ミツバチのちがい</h2>
+    <div class="table-wrapper">
+      <table>
+        <tr>
+          <th>項目</th><th>日本ミツバチ</th><th>西洋ミツバチ</th>
+        </tr>
+        <tr>
+          <td>種類</td><td>在来種（野生に近い）</td><td>外来種（養蜂向け）</td>
+        </tr>
+        <tr>
+          <td>採蜜量</td><td>少ない（年1〜2回）</td><td>多い（年5〜6回）</td>
+        </tr>
+        <tr>
+          <td>特徴</td><td>百種類以上の花の蜜／味が深い</td><td>単一花が多く味が均一</td>
+        </tr>
+      </table>
+    </div>
+  </section>
+</main>
 
-  <h3>🐝 日本ミツバチと西洋ミツバチのちがい</h3>
-  <table>
-    <tr>
-      <th>項目</th>
-      <th>日本ミツバチ 🐝</th>
-      <th>西洋ミツバチ 🐝</th>
-    </tr>
-    <tr>
-      <td>種類</td>
-      <td>在来種（野生に近い）</td>
-      <td>外来種（養蜂向け）</td>
-    </tr>
-    <tr>
-      <td>採蜜量</td>
-      <td>少ない（年1〜2回）</td>
-      <td>多い（年5〜6回）</td>
-    </tr>
-    <tr>
-      <td>集める蜜</td>
-      <td>花の蜜だけ</td>
-      <td>花の蜜が中心（補助エサも）</td>
-    </tr>
-    <tr>
-      <td>性格</td>
-      <td>おとなしく繊細</td>
-      <td>活発で生産性高い</td>
-    </tr>
-    <tr>
-      <td>特徴</td>
-      <td>百種類以上の花の蜜／味が深い</td>
-      <td>単一花が多く味が均一</td>
-    </tr>
-  </table>
-
-  <p>日本ミツバチは非常に繊細で、環境が悪化すると巣を放棄してしまうほど飼育がむずかしく、採蜜量も西洋ミツバチの約10分の1。そのため、その蜂蜜は“幻の蜜”とも呼ばれています。</p>
-
-  <h3>🐝 百花蜜とは？</h3>
-  <p>さまざまな花々から集めた蜜が混ざり合った、自然そのままの蜂蜜。特に日本ミツバチの百花蜜は、味や香りが一つとして同じにならない一期一会の“天然ブレンド”。四季折々の花だけを選んで集めるため、風味豊かで香り高い逸品です。</p>
-
-  <h3>🐝「加熱しない・混ぜない・加工しない」が本物のハチミツ</h3>
-  <p>本製品は「非加熱・無添加」。蜜を絞る際、<strong>①圧搾濾過</strong> と <strong>②垂れ蜜濾過</strong> の二つの方法を使います。</p>
-  <ul>
-    <li>圧搾濾過：巣をそのまま絞る方法</li>
-    <li>垂れ蜜濾過：時間をかけて蜜が自然に落ちるのを待つ方法</li>
-  </ul>
-  <p>同じ巣から採蜜しても、方法によって透明度や風味が異なります。様々な花の蜜がブレンドされた滋養豊かな味わいは、人間には作り出せない自然の恵みです。腐ることのない天然の良薬を、ぜひお召し上がりください。</p>
-
-  <footer>
-    <p>[ HACCPに沿った衛生管理 ]</p>
-    <p>食品衛生責任者：今村 正保</p>
-    <p>採蜜ボトル詰め製造所：さいたま市桜区西堀3-25-6</p>
-  </footer>
+<footer>
+  <p>食品衛生責任者 今村 正保｜採蜜ボトル詰め製造所：さいたま市桜区西堀3-25-6</p>
+</footer>
 
 </body>
 </html>
