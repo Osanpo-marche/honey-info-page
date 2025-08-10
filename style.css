@@ -44,3 +44,14 @@ iframe {
   margin: 20px auto;
   border-radius: 8px; /* 角丸にして柔らかい雰囲気 */
 }
+.photo-gallery {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.bee-photo {
+    max-width: 48%;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
