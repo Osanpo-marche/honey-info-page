@@ -32,4 +32,6 @@ address {
   font-style: normal;
   font-size: 0.9em;
   color: #666;
+  text-align: center; /* 中央揃え */
+  line-height: 1.6; /* 行間を広げて読みやすく */
 }
