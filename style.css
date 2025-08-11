@@ -79,7 +79,7 @@ iframe {
     text-align: center;
     margin: 30px auto;
     padding: 15px 20px;
-    background: #fff8dc url('../images/bg-sakura-bee.png') center/cover no-repeat; 
+    background: #fff8dc url('images/bg-sakura-bee.png') center/cover no-repeat; 
     /* ↑ 薄い桜と蜂の透かし画像を配置 */
     background-blend-mode: lighten; /* 透かし感を強調 */
     border-radius: 10px;
