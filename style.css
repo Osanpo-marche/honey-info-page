@@ -78,33 +78,25 @@ iframe {
 .product-intro {
     text-align: center;
     margin: 30px auto;
-    padding: 25px 20px; /* パディングを少し増やしてゆったりと */
-    background: linear-gradient(135deg, #fcefe7 0%, #fff8e8 100%); /* 桜色とクリーム色の優しいグラデーション */
-    border: 2px dashed #ffc0cb; /* 点線でかわいらしさをプラス */
-    border-radius: 15px; /* 角をさらに丸くして柔らかく */
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1); /* 影を強調して立体感を出す */
+    padding: 15px 20px;
+    background: linear-gradient(135deg, #fcefe7 0%, #fff8e8 100%);
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
     max-width: 600px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* ホバー時のアニメーションを追加 */
-}
-
-/* ホバー時の効果を追加 */
-.product-intro:hover {
-    transform: translateY(-5px); /* 少し上に浮き上がる */
-    box-shadow: 0 8px 20px rgba(0,0,0,0.15); /* 影をより濃くする */
 }
 
 .product-title {
-    font-size: 2.2rem; /* タイトルを少し大きく、存在感を出す */
+    font-size: 2.2rem;
     color: #8b4513;
     font-weight: bold;
-    margin-bottom: 10px;
-    letter-spacing: 0.05em; /* 文字間隔を少し広げて読みやすく */
-    text-shadow: 1px 1px 2px rgba(0,0,0,0.1); /* ほんの少し影をつけて立体的に */
+    margin-bottom: 8px;
+    letter-spacing: 0.05em;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
 }
 
 .product-subtitle {
-    font-size: 1.1rem; /* サブタイトルも少し大きく */
+    font-size: 1.1rem;
     color: #5a3d1e;
-    line-height: 1.8; /* 行間を広げて読みやすく */
-    font-style: italic; /* 少し斜体にして上品に */
+    line-height: 1.6;
+    font-style: italic;
 }
