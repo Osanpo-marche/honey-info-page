@@ -129,5 +129,39 @@
       </address>
     </section>
   </main>
+
+  <!-- 桜の花びらアニメーション -->
+<style>
+.petal {
+    position: fixed;
+    top: -5vh;
+    animation-name: fall;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    z-index: 9999; /* 最前面 */
+    pointer-events: none; /* クリックの邪魔をしない */
+}
+@keyframes fall {
+    to {
+        transform: translateY(110vh) rotate(360deg);
+    }
+}
+</style>
+
+<script>
+const numPetals = 15; // 花びらの数
+for (let i = 0; i < numPetals; i++) {
+    let petal = document.createElement("div");
+    petal.classList.add("petal");
+    petal.style.left = Math.random() * 100 + "vw";
+    petal.style.animationDuration = (Math.random() * 5 + 7) + "s";
+    petal.style.animationDelay = Math.random() * 5 + "s";
+    petal.style.opacity = Math.random() * 0.7 + 0.3;
+    petal.style.fontSize = Math.random() * 12 + 18 + "px";
+    petal.innerHTML = "🌸";
+    document.body.appendChild(petal);
+}
+</script>
+
 </body>
 </html>
