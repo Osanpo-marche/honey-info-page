@@ -67,3 +67,10 @@ iframe {
     }
 }
 
+.highlight {
+    font-weight: bold;
+    color: #d2691e; /* 蜂蜜色系の茶色 */
+    background-color: #fff8dc; /* 薄い蜂蜜色背景 */
+    padding: 2px 4px;
+    border-radius: 4px;
+}
