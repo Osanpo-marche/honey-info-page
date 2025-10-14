@@ -108,10 +108,10 @@ address {
 }
 
 .product-subtitle {
-  font-size: 1.1rem;
-  color: #7b5b42;
-  line-height: 1.8;
-  font-family: "Yu Gothic", "Hiragino Kaku Gothic ProN", sans-serif;
-  font-style: normal;
-  opacity: 0.95;
+    font-size: 1.1rem;
+    color: #5a3d1e;
+    line-height: 1.8;
+    font-style: italic;
+    font-weight: 500; /* ← 追加：軽めの太字で見やすく */
+    text-shadow: 0.5px 0.5px 0.5px rgba(0,0,0,0.1); /* ← 薄い影で視認性UP */
 }
