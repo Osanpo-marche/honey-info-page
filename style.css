@@ -20,6 +20,27 @@ table {
   border-collapse: collapse;
   width: 100%;
   margin-top: 1em;
+  background-color: #fff; /* ★ 背景を白にして視認性UP */
+  border: 1px solid #ddd; /* ★ 枠線を淡く */
+  border-radius: 8px;
+  overflow: hidden; /* 角丸が反映されるように */
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 10px 14px; /* ★ 読みやすい余白 */
+  text-align: center;
+}
+
+th {
+  background-color: #fcefee; /* 桜色の淡いヘッダー */
+  color: #5c4033;
+  font-weight: bold;
+}
+
+td {
+  background-color: #fff;
+  color: #333;
 }
 
 p, address, table {
