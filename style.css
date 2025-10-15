@@ -112,4 +112,19 @@ p, address, table {
   color: #5a3d1e;
   line-height: 1.8;
   font-weight: 500;
-  text-shadow: 0.5px 0.5px 0.5px rgba(0,0,
+  text-shadow: 0.5px 0.5px 0.5px rgba(0,0,0,0.1);
+  font-style: normal; /* ← 斜体解除 */
+}
+
+/* --- PC表示時はフォントを少し濃く --- */
+@media (min-width: 769px) {
+  body {
+    color: #1a1a1a;
+    font-weight: 550;
+  }
+
+  p, address, table {
+    color: #1a1a1a;
+    font-weight: 550;
+  }
+}
