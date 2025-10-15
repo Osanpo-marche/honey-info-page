@@ -22,20 +22,11 @@ table {
   margin-top: 1em;
 }
 
-table th, table td {
-  border: 1px solid #ccc;
-  padding: 8px;
-  text-align: center;
+p, address, table {
+  color: #222;
+  font-weight: 500; /* 通常より少し太め */
 }
 
-address {
-  margin-top: 3em;
-  font-style: normal;
-  font-size: 0.9em;
-  color: #666;
-  text-align: center; /* 中央揃え */
-  line-height: 1.6; /* 行間を広げて読みやすく */
-}
 
 .video-container {
     position: relative;
