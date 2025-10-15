@@ -1,12 +1,12 @@
 body {
   font-family: "Yu Gothic", "游ゴシック体", sans-serif;
   background-color: #fff8f0;
-  color: #222; /* ← #333 → #222 に変更（少し濃く） */
-  line-height: 1.7; /* 読みやすく */
+  color: #222; /* ベース文字色（スマホ向け） */
+  line-height: 1.7;
   padding: 20px;
   max-width: 800px;
   margin: auto;
-  font-weight: 500; /* ← 標準よりやや太く */
+  font-weight: 500;
 }
 
 h2 {
@@ -24,56 +24,60 @@ table {
 
 p, address, table {
   color: #222;
-  font-weight: 500; /* 通常より少し太め */
+  font-weight: 500;
 }
 
-
+/* --- 動画 --- */
 .video-container {
-    position: relative;
-    padding-bottom: 56.25%; /* 16:9比率維持 */
-    height: 0;
-    overflow: hidden;
-    max-width: 900px; /* 大きくしたい最大幅 */
-    margin: 0 auto;
-}
-.video-container iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9比率維持 */
+  height: 0;
+  overflow: hidden;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* --- 写真ギャラリー --- */
 .photo-gallery {
-    display: flex;
-    flex-wrap: wrap; /* 幅が足りない場合は折り返し */
-    gap: 15px;       /* 写真の間隔 */
-    justify-content: center; /* 横方向中央寄せ */
-    margin: 20px 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  margin: 20px 0;
 }
 
 .bee-photo {
-    max-width: 30%;  /* PC時は3枚並べ */
-    height: auto;
-    border-radius: 8px; /* 角丸で柔らかい印象 */
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  max-width: 30%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
-/* スマホ表示用（幅768px以下） */
+/* スマホ表示（768px以下） */
 @media (max-width: 768px) {
-    .bee-photo {
-        max-width: 100%; /* スマホ時は縦並び */
-    }
+  .bee-photo {
+    max-width: 100%;
+  }
 }
 
+/* --- ハイライト --- */
 .highlight {
-    font-weight: bold;
-    color: #d2691e; /* 蜂蜜色系の茶色 */
-    background-color: #fff8dc; /* 薄い蜂蜜色背景 */
-    padding: 2px 4px;
-    border-radius: 4px;
+  font-weight: bold;
+  color: #d2691e;
+  background-color: #fff8dc;
+  padding: 2px 4px;
+  border-radius: 4px;
 }
 
+/* --- 商品紹介ブロック --- */
 .product-intro {
   text-align: center;
   margin: 50px auto 40px;
@@ -84,6 +88,7 @@ p, address, table {
   box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
   max-width: 720px;
   transition: all 0.3s ease-in-out;
+  border: 1px solid rgba(140, 100, 80, 0.15); /* ← 追加：淡い縁取り */
 }
 
 .product-intro:hover {
@@ -97,13 +102,14 @@ p, address, table {
   color: #5c4033;
   letter-spacing: 0.08em;
   margin-bottom: 0.4em;
+  font-weight: 600; /* ← 銘柄感UP */
+  text-shadow: 1px 1px 2px rgba(255,255,255,0.8),
+               0 0 4px rgba(0,0,0,0.15); /* ← 柔らかい立体感 */
 }
 
 .product-subtitle {
-    font-size: 1.1rem;
-    color: #5a3d1e;
-    line-height: 1.8;
-    font-weight: 500; /* 少し太めで見やすく */
-    text-shadow: 0.5px 0.5px 0.5px rgba(0,0,0,0.1);
-    font-style: normal; /* ← 斜体を解除 */
-}
+  font-size: 1.1rem;
+  color: #5a3d1e;
+  line-height: 1.8;
+  font-weight: 500;
+  text-shadow: 0.5px 0.5px 0.5px rgba(0,0,
